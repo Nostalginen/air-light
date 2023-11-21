@@ -59,10 +59,10 @@ abstract class Taxonomy {
 		}, $object_types );
 
     if ( $args['pll_translatable'] ) {
-      add_filter( 'pll_get_taxonomies', function( $cpts ) use ( $slug ) {
-        $cpts[ $slug ] = $slug;
-        return $cpts;
-      } );
+			  add_filter( 'pll_get_taxonomies', function( $cpts ) use ( $slug ) {
+			  $cpts[ $slug ] = $slug;
+			  return $cpts;
+				  } );
     }
 
 		register_taxonomy( $slug, $object_types_slugs, $args );
@@ -84,5 +84,4 @@ abstract class Taxonomy {
 
 		return $registered_object_types;
 	}
-
 }

@@ -6,8 +6,8 @@
  * own files under /inc and just require here.
  *
  * @Date: 2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2023-09-12 12:20:49
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-11-21 10:44:58
  *
  * @package air-light
  */
@@ -41,7 +41,7 @@ add_action( 'after_setup_theme', function() {
      * Logo and featured image
      */
     'default_featured_image'  => null,
-    'logo'                    => '/svg/logo.svg',
+    'logo'                    => get_template_directory_uri() . '/logo.png',
 
     /**
      * Custom setting group settings when using Air setting groups plugin.

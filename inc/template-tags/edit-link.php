@@ -18,7 +18,7 @@ namespace Air_Light;
 function air_edit_link() {
 
   if ( ! get_edit_post_link() ) {
-    return;
+		return;
   } ?>
 
     <p class="edit-link">
@@ -28,5 +28,4 @@ function air_edit_link() {
       </a>
     </p>
   <?php
-
 }

@@ -6,8 +6,8 @@
  *
  * @Author: Roni Laukkarinen
  * @Date: 2020-05-11 13:33:49
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-09-07 11:57:45
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-11-20 15:28:20
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  * @package air-light

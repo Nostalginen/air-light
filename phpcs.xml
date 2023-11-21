@@ -29,16 +29,20 @@
         <exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
         <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
-        <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
+        <exclude name="Universal.WhiteSpace.PrecisionAlignment" />
         <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
         <exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned" />
         <exclude name="WordPress.Arrays.ArrayIndentation.MultiLineArrayItemNotAligned" />
         <exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed" />
         <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
         <exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent" />
+        <exclude name="Universal.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed" />
+        <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+        <exclude name="Universal.Operators.DisallowShortTernary.Found" />
 
         <!-- Don't require too strict inline commenting, it's a good thing to documentate, let's not make it frustrating -->
         <exclude name="Squiz.Commenting.FunctionComment.WrongStyle" />
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.SpaceAfterFunction" />
         <exclude name="Squiz.Commenting.ClassComment.WrongStyle" />
         <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
         <exclude name="Squiz.Commenting.FunctionComment.Missing" />
@@ -49,6 +53,7 @@
         <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
 
         <!-- General code style related excludes -->
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace" />
         <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
         <exclude name="Squiz.PHP.EmbeddedPhp.MultipleStatements" />
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen" />
@@ -99,6 +104,7 @@
         <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
         <exclude name="WordPress.PHP.DisallowShortTernary.Found" />
         <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_query" />
+        <exclude name="NormalizedArrays.Arrays.ArrayBraceSpacing.EmptyArraySpacing" />
 
         <!-- Project based -->
         <exclude name="Squiz.PHP.CommentedOutCode.Found" />

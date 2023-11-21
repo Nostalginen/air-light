@@ -33,7 +33,7 @@ abstract class Post_Type {
 
 
   public function __construct( $slug ) {
-    $this->slug = $slug;
+		$this->slug = $slug;
   }
 
 
@@ -55,15 +55,14 @@ abstract class Post_Type {
    *                               of failure.
    */
   public function register_wp_post_type( $slug, $args ) {
-    if ( $args['pll_translatable'] ) {
-      add_filter( 'pll_get_post_types', function( $cpts ) use ( $slug ) {
-        $cpts[ $slug ] = $slug;
+		if ( $args['pll_translatable'] ) {
+		  add_filter( 'pll_get_post_types', function( $cpts ) use ( $slug ) {
+				$cpts[ $slug ] = $slug;
 
-        return $cpts;
-      }, 9, 2 );
-    }
+				return $cpts;
+		  }, 9, 2 );
+			}
 
-    return register_post_type( $slug, $args );
+		return register_post_type( $slug, $args );
   }
-
 }

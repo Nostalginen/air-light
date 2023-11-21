@@ -4,8 +4,8 @@
  *
  * @Author: Roni Laukkarinen
  * @Date:   2022-06-30 16:24:47
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2023-05-18 17:10:37
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-11-21 10:21:35
  */
 
 // Import functions needed for the navigation module
@@ -91,7 +91,7 @@ const navMobile = () => {
       // Scroll to top when triggering mobile navigation
       // to ensure no gaps are between header and navigation
       // Please note, if you use sticky-nav, comment out the next line
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
 
       // Toggle aria-expanded attribute, if it's false, change to true and vice versa
       if (document.getElementById('nav-toggle').getAttribute('aria-expanded') === 'false') {

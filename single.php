@@ -3,8 +3,8 @@
  * The template for displaying all single posts
  *
  * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-09-07 11:57:39
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-11-20 15:28:29
  *
  * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
@@ -18,7 +18,7 @@ get_header(); ?>
 <main class="site-main">
 
   <section class="block block-single">
-    <article class="article-content">
+     <article class="article-content">
 
       <h1><?php the_title(); ?></h1>
 
