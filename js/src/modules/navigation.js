@@ -5,12 +5,12 @@
  * @Author: Roni Laukkarinen
  * @Date:   2022-06-30 16:24:47
  * @Last Modified by: Roni Laukkarinen
- * @Last Modified time: 2023-11-21 10:21:35
+ * @Last Modified time: 2023-11-21 11:45:17
  */
 
 // Import functions needed for the navigation module
 import addMultipleEventListeners from './navigation/add-multiple-event-listeners';
-import calculateBurgerMenuPosition from './navigation/calculate-burger-menu-position';
+// import calculateBurgerMenuPosition from './navigation/calculate-burger-menu-position';
 import a11yFocusTrap from './navigation/a11y-focus-trap';
 import calculateDropdownToggleHeight from './navigation/calculate-dropdown-toggle-height';
 import checkForSubmenuOverflow from './navigation/check-for-submenu-overflow';
@@ -150,7 +150,7 @@ const navMobile = () => {
   });
 
   // Calculate mobile nav-toggle position
-  calculateBurgerMenuPosition();
+  // calculateBurgerMenuPosition();
 };
 
 // Sticky navigation
@@ -235,7 +235,7 @@ export {
 // Reinit some things
 window.addEventListener('resize', () => {
   // Center vertically the absolute positioned burger
-  calculateBurgerMenuPosition();
+  // calculateBurgerMenuPosition();
 
   // Center vertically the absolute positioned mobile dropdown toggles by setting fixed height
   calculateDropdownToggleHeight();

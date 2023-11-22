@@ -5,9 +5,9 @@
 // CSS variables
 :root {
   // Site-header and general mobile navigation elements
-  --color-background-nav-mobile-header: var(--color-main);
+  --color-background-nav-mobile-header: #fff;
   --color-background-nav-mobile-header-active: var(--color-main);
-  --width-navigation: min(27.5rem, 100vw);
+  --width-navigation: 100vw;
 
   // Affecting to both main and sub-levels
   --color-background-menu-items: var(--color-main);
@@ -17,7 +17,7 @@
   --color-dropdown-toggle-mobile: var(--color-white);
 
   // Main level items on mobile
-  --font-size-main-level-mobile: 1.5rem;
+  --font-size-main-level-mobile: 2.2rem;
   --font-weight-main-level-mobile: 600;
   --padding-main-level-vertical-mobile: 1.2rem;
   --color-main-level-menu-item-hover-focus-mobile: var(--color-white);
@@ -69,7 +69,7 @@
     backface-visibility: hidden;
     background-color: var(--color-background-menu-items);
     // Real height is calculated in JS so this is a fallback
-    height: calc(100vh - 7.2rem);
+    height: 100vh;
     overflow: auto;
     // Add padding to ensure all nav elements are visible on all devices and browsers for example iOS Safari
     padding-bottom: 12rem;
@@ -78,9 +78,9 @@
     position: fixed;
     right: 0;
     // Real top is calculated in JS so this is a fallback
-    top: 7.2rem;
-    transform: translate3d(100%, 0, 0);
-    transition: all 180ms ease-in-out;
+    top: 0;
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in-out;
     visibility: hidden;
     width: var(--width-navigation);
     z-index: 5;
@@ -88,11 +88,11 @@
 
   .menu-items {
     margin: 0;
+    padding: 10rem 2rem 0;
   }
 
   // Main level mobile navigation links
   .menu-item a {
-    border-top: 1px solid var(--color-separator-nav-mobile);
     color: var(--color-main-level-menu-item-mobile);
     display: block;
     font-size: var(--font-size-main-level-mobile);
@@ -105,6 +105,7 @@
     padding-top: var(--padding-main-level-vertical-mobile);
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
     z-index: 0;
   }
 
@@ -157,6 +158,7 @@
     padding-top: var(--padding-sub-menu-vertical-mobile);
     position: absolute;
     right: 0;
+    text-transform: uppercase;
     top: 2px;
     z-index: 100;
 
@@ -223,6 +225,10 @@
   // Push site content and footer to the left
   .js-nav-active .site-main,
   .js-nav-active .site-footer {
-    transform: translate3d(calc(var(--width-navigation) * -1), 0, 0);
+    transform: translate(0, 0, 0);
   }
+}
+
+.admin-bar .menu-items-wrapper {
+  padding-top: 3.2rem;
 }

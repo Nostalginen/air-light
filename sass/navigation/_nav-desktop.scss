@@ -12,7 +12,7 @@
   --font-size-main-level: var(--font-size-16);
   --font-weight-main-level: var(--font-weight-bold);
   --padding-main-level-horizontal: 0;
-  --padding-main-level-vertical: .6rem;
+  --padding-main-level-vertical: .3rem;
   --color-main-level: var(--color-black);
   --color-hover-main-level: var(--color-link-text);
   --gap-between-dropdown-toggle: 1.5rem;
@@ -72,13 +72,14 @@
     color: var(--color-main-level);
     display: inline-flex;
     font-size: var(--font-size-main-level);
-    font-weight: var(--font-weight-main-level);
+    font-weight: 600;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: var(--padding-main-level-vertical);
     padding-left: var(--padding-main-level-horizontal);
     padding-right: var(--padding-main-level-horizontal);
     padding-top: var(--padding-main-level-vertical);
+    text-transform: uppercase;
     white-space: nowrap;
   }
 
@@ -93,6 +94,7 @@
     padding-left: var(--padding-sub-menu-link-horizontal);
     padding-right: var(--padding-sub-menu-link-horizontal);
     padding-top: var(--padding-sub-menu-link-vertical);
+    text-transform: uppercase;
     white-space: normal;
     width: 100%;
   }
@@ -100,6 +102,7 @@
   // Current menu item color
   .menu-item.current-menu-parent > a,
   .menu-item.current-menu-item > a {
+    border-bottom: 2px solid var(--color-current);
     color: var(--color-current);
   }
 

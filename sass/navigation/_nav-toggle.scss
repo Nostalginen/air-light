@@ -2,8 +2,8 @@
 .hamburger {
   --hamburger-layer-height: 2px;
   --hamburger-width: 3.2rem;
-  --hamburger-color: var(--color-white);
-  --hamburger-color-active: var(--color-white);
+  --hamburger-color: var(--color-black);
+  --hamburger-color-active: var(--color-science-blue);
   background-color: var(--hamburger-color);
   flex-shrink: 0;
   height: var(--hamburger-layer-height);
@@ -46,7 +46,7 @@ body:not(.js-nav-active) .nav-toggle:hover .hamburger::after {
 // Active state for 🍔
 .js-nav-active .hamburger::before,
 .js-nav-active .hamburger::after {
-  background-color: var(--hamburger-color-active);
+  background-color: var(--color-white);
   left: 0;
   top: 0;
 }
@@ -63,23 +63,12 @@ body:not(.js-nav-active) .nav-toggle:hover .hamburger::after {
   background-color: transparent;
 }
 
-// Make visual label out of aria-label
-.nav-toggle::after {
-  color: var(--color-white);
-  content: attr(aria-label);
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-semibold);
-  margin-left: 1.6rem;
-  white-space: nowrap;
-}
-
 // The actual toggle <button>
 // Uncomment lines if absolute positioning of toggle is needed
 .nav-toggle {
   align-items: center;
   background-color: transparent;
   border: 0;
-  border-radius: 3px;
   cursor: pointer;
   display: flex;
   font-weight: var(--font-weight-semibold);
@@ -92,3 +81,12 @@ body:not(.js-nav-active) .nav-toggle:hover .hamburger::after {
   text-decoration: none;
   user-select: none;
 }
+
+// Toggle button when nav is open
+.js-nav-active .nav-toggle {
+  position: absolute;
+  right: 2rem;
+  top: 5rem;
+  z-index: 90;
+}
+
