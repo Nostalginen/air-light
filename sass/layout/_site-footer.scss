@@ -1,80 +1,62 @@
-// The very bottom of the site. Usually contains supporting
-// or secondary navigation, social media icons, contact details
-// and such.
+:root {
+  --icon-background: #b2b5bb;
+  --icon-background-hover: #edeeef;
+}
 
-// Please note: These are mostly for demo purposes
-// so feel free to remove everything in this file
-// and start over.
 .site-footer {
+  background-color: var(--color-valhalla);
   clear: both;
   color: var(--color-white);
-  overflow: hidden;
-  padding: 6rem 2rem;
+  margin-top: auto;
   text-align: center;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: $width-grid-base;
+    padding: 4rem var(--padding-container-horizontal);
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 4rem;
+
+    a {
+      background-color: var(--icon-background);
+      border-radius: 100%;
+      height: 4rem;
+      padding: 1rem;
+      width: 4rem;
+
+      &:hover,
+      &:focus {
+        background-color: var(--icon-background-hover);
+      }
+    }
+
+    svg {
+      color: var(--color-valhalla);
+      height: 2rem;
+      width: 2rem;
+    }
+  }
 
   p,
   span {
     color: var(--color-white);
   }
+}
 
-  .wordpress-logo {
-    display: block;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  span {
-    display: block;
-    text-align: center;
-  }
-
-  svg {
-    margin-right: .5rem;
-    position: relative;
-  }
-
-  .powered-by-wordpress {
-    display: inline-block;
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .github-link {
-    margin-left: .8rem;
-    margin-top: 4px;
-    overflow: hidden;
-    padding-bottom: 4px;
-    position: relative;
-  }
-
-  a {
+.footer-content {
+  a:hover,
+  a,
+  a:focus {
     color: var(--color-white);
-    transition: opacity $transition-duration;
-
-    &:hover,
-    &:focus {
-      color: var(--color-white);
-      opacity: .5;
-
-      &::after {
-        opacity: .2;
-      }
-    }
+    text-decoration: underline;
   }
 
-  .theme-info {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    line-height: 1.5;
-    margin: 0 auto;
-    text-align: center;
-
-    i {
-      margin: 0 .5rem;
-    }
+  :first-child {
+    margin-top: .6rem;
   }
 }

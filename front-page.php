@@ -6,8 +6,8 @@
  * Initial styles for front page template.
  *
  * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-05-25 20:18:40
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-11-28 20:49:46
  *
  * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials

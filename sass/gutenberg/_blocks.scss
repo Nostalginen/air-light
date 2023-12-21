@@ -29,5 +29,7 @@
   @import 'gutenberg/blocks/error';
 
   // ACF blocks
-  // @import 'gutenberg/blocks/your-new-acf-block';
+  @import 'gutenberg/blocks/block-hero';
+  @import 'gutenberg/blocks/feedback-carousel';
+  @import 'gutenberg/blocks/block-image-boxes';
 }

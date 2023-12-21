@@ -1,0 +1,55 @@
+.block-hero {
+  margin-bottom: 8rem;
+  margin-top: -2rem;
+  position: relative;
+
+  img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .block-hero-overlay {
+    background-image: linear-gradient(4deg, rgb(2 0 36 / 1) 0%, rgb(82 113 255 / 1) 100%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .block-hero-content {
+    align-items: center;
+    color: var(--color-white);
+    display: flex;
+    margin: auto;
+    max-width: $width-grid-base;
+    padding: 10rem var(--padding-container-horizontal);
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      color: var(--color-white);
+      line-height: 1.3;
+
+      @media only screen and (min-width: $width-max-mobile) {
+        font-size: 7rem;
+        max-width: 70%;
+      }
+
+      @media only screen and (min-width: 1800px) {
+        font-size: 10rem;
+      }
+    }
+
+    @media only screen and (min-width: $width-max-mobile) {
+      min-height: 70vh;
+    }
+  }
+}

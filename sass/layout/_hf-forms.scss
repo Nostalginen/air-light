@@ -1,0 +1,35 @@
+.hf-form {
+  margin: 8rem auto;
+  max-width: $width-grid-base;
+  padding-left: var(--padding-container-horizontal);
+  padding-right: var(--padding-container-horizontal);
+
+  h1 {
+    text-align: center;
+  }
+
+  .hf-fields-wrap {
+    margin: auto;
+    max-width: 80rem;
+  }
+
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 25rem;
+    resize: none;
+  }
+
+  .hf-message {
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    @include button();
+  }
+}

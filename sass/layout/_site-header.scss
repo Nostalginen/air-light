@@ -1,6 +1,14 @@
 // The very top of the site, element that usually includes
 // the site navigation and search for example.
 .site-header {
+  box-shadow: 0 0 .5rem 0 rgb(0 0 0 / .55);
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+  z-index: 15;
+}
+
+.header-wrapper {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -11,8 +19,6 @@
   padding-left: var(--padding-container-horizontal);
   padding-right: var(--padding-container-horizontal);
   padding-top: var(--padding-site-header-vertical);
-  position: relative;
-  z-index: 15;
 
   @media (max-width: $width-max-mobile) {
     --padding-container-horizontal: 2rem;

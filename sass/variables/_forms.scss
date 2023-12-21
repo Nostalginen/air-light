@@ -9,7 +9,7 @@
   --color-border-forms-focus: var(--color-paragraph);
   --color-button: var(--color-white);
   --color-button-hover: var(--color-white);
-  --color-button-background: var(--color-east-bay);
+  --color-button-background: var(--color-valhalla);
   --color-button-background-hover: var(--color-valhalla);
   --color-checkbox: var(--color-east-bay);
   --color-checkbox-outline: 0 0 0 3px rgb(84 87 115 / .2);
@@ -21,10 +21,10 @@
   --opacity-placeholder-focus: .8;
 
   // Form element settings
-  --border-radius-checkbox: 3px;
-  --border-radius-input-field: 3px;
-  --border-radius-button: 3px;
-  --border-radius-select: 3px;
+  --border-radius-checkbox: 0;
+  --border-radius-input-field: 0;
+  --border-radius-button: 0;
+  --border-radius-select: 0;
   --border-width-checkbox: 1px;
   --border-width-input-field: 1px;
   --font-size-input-fields: var(--font-size-17);
@@ -44,3 +44,5 @@
   --size-radio-button: 1rem;
   --size-radio-button-marker: .5rem;
 }
+
+

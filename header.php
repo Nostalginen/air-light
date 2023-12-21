@@ -6,8 +6,8 @@
  *
  * @Author: Roni Laukkarinen
  * @Date: 2020-05-11 13:17:32
- * @Last Modified by:   Tuomas Marttila
- * @Last Modified time: 2023-02-27 10:46:23
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-12-19 15:44:17
  *
  * @package air-light
  */
@@ -34,8 +34,10 @@ namespace Air_Light;
   <div id="page" class="site">
 
     <header class="site-header">
-      <?php get_template_part( 'template-parts/header/branding' ); ?>
-      <?php get_template_part( 'template-parts/header/navigation' ); ?>
+      <div class="header-wrapper">
+        <?php get_template_part( 'template-parts/header/branding' ); ?>
+        <?php get_template_part( 'template-parts/header/navigation' ); ?>
+      </div>
     </header>
 
     <div class="site-content">

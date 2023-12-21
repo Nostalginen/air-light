@@ -1,0 +1,48 @@
+.image-boxes-container {
+  margin: 8rem auto;
+  max-width: $width-grid-base;
+  padding-bottom: var(--padding-site-header-vertical);
+  padding-left: var(--padding-container-horizontal);
+  padding-right: var(--padding-container-horizontal);
+  padding-top: var(--padding-site-header-vertical);
+
+  h1 {
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 5rem 0;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (min-width: $width-max-mobile) {
+      padding: 0 3rem;
+    }
+
+    @media only screen and (min-width: 1800px) {
+      padding: 0 7rem;
+    }
+  }
+
+  @media only screen and (min-width: $width-max-mobile) {
+    flex-direction: row;
+    gap: 0;
+
+    img,
+    .content {
+      width: 50%;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+}

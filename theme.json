@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "styles": {
+    "elements": {
+      "button": {
+        "typography": {
+          "fontSize": "16px",
+          "fontWeight": "700"
+        },
+        "color": {
+          "background": "#435fda",
+          "text": "#fff"
+        },
+        "border": {
+          "radius": "0px",
+          "width": "0px",
+          "style": "solid"
+        },
+        ":hover": {
+          "color": {
+            "background": "#5271ff",
+            "text": "#fff"
+          }
+        }
+      }
+    }
+  }
+}

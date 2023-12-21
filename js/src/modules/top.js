@@ -2,8 +2,8 @@
 /**
  * @Author: Roni Laukkarinen
  * @Date:   2022-05-07 12:20:13
- * @Last Modified by:   Roni Äikäs
- * @Last Modified time: 2023-08-16 17:05:43
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-11-22 10:53:15
  */
 import MoveTo from 'moveto';
 
@@ -22,11 +22,9 @@ const backToTop = () => {
     const scrolled = window.pageYOffset;
     const scrollAmount = document.documentElement.clientHeight;
 
-    if (scrolled > scrollAmount) {
+    if (topButton && scrolled > scrollAmount) {
       topButton.classList.add('is-visible');
-    }
-
-    if (scrolled < scrollAmount) {
+    } else if (topButton && scrolled < scrollAmount) {
       topButton.classList.remove('is-visible');
     }
   }

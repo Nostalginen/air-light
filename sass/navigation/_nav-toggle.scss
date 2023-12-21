@@ -32,17 +32,6 @@
   }
 }
 
-// 🍔 third layer width
-body:not(.js-nav-active) .nav-toggle .hamburger::after,
-body:not(.js-nav-active) .nav-toggle:focus .hamburger::after {
-  width: 80%;
-}
-
-// 🍔 third layer hover
-body:not(.js-nav-active) .nav-toggle:hover .hamburger::after {
-  width: 100%;
-}
-
 // Active state for 🍔
 .js-nav-active .hamburger::before,
 .js-nav-active .hamburger::after {

@@ -71,6 +71,7 @@
     "airbnb-browser-shims": "^3.3.0",
     "gulp": "^4.0.2",
     "moveto": "^1.8.2",
-    "reframe.js": "^4.0.0"
+    "reframe.js": "^4.0.0",
+    "swiper": "^11.0.5"
   }
 }

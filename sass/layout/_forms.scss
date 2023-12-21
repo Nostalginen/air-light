@@ -81,6 +81,7 @@ input[type="search"] {
     background-color: var(--color-background-input-field);
     border-color: var(--color-border-forms-focus);
     color: var(--color-form-text);
+    outline: 0;
 
     &::placeholder {
       color: var(--color-placeholder-focus);

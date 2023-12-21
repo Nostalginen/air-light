@@ -10,13 +10,14 @@
   --color-blue-chalk: #ece6f2;
   --color-east-bay: #545773;
   --color-pattens-blue: #eaf1f8;
-  --color-science-blue: #5271ff;
+  --color-science-blue: #435fda;
+  --color-science-blue-light: #5271ff;
   --color-scorpion: #5f5f5f;
-  --color-valhalla: #3247a3;
+  --color-valhalla: #2e364a;
   --color-white: #fff;
 
   // Main element colors
-  --color-heading: var(--color-main);
+  --color-heading: var(--color-valhalla);
   --color-main: var(--color-science-blue);
   --color-paragraph: var(--color-east-bay);
 
