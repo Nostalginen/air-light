@@ -13,8 +13,21 @@
     max-width: 80rem;
   }
 
-  label,
-  input,
+  label {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  input[type="number"],
+  input[type="month"],
+  input[type="week"],
+  input[type="email"],
+  input[type="search"],
   textarea {
     display: block;
     width: 100%;
@@ -31,5 +44,9 @@
 
   input[type="submit"] {
     @include button();
+  }
+
+  select {
+    padding: 1.5rem;
   }
 }
