@@ -102,7 +102,6 @@
   // Current menu item color
   .menu-item.current-menu-parent > a,
   .menu-item.current-menu-item > a {
-    border-bottom: 2px solid var(--color-current);
     color: var(--color-current);
   }
 
