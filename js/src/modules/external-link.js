@@ -2,8 +2,8 @@
 /**
  * @Author: Roni Laukkarinen
  * @Date:   2021-09-01 11:55:37
- * @Last Modified by:   Elias Kautto
- * @Last Modified time: 2023-09-07 12:13:08
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2023-12-27 15:33:06
  */
 /**
  * Style external links
@@ -112,6 +112,8 @@ export function styleExternalLinks() {
       'no-external-link-indicator',
       'global-link',
       'button',
+      'esf_insta_grid_box',
+      'efbl_feed_popup',
     ];
 
     if (!classExceptions.some((className) => externalLink.classList.contains(className))) {
