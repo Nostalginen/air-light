@@ -193,7 +193,6 @@
     position: absolute;
     top: 100%;
     transition: all .2s cubic-bezier(.19, 1, .22, 1);
-    width: var(--width-sub-menu);
     z-index: 9;
 
     // If dropdown is out of viewport from the right, move it to the left
@@ -256,7 +255,6 @@
       content: '';
       display: block;
       height: var(--gap-dropdown);
-      max-width: var(--width-sub-menu);
       position: absolute;
       top: 100%;
       visibility: hidden;
